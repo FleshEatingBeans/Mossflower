@@ -1,0 +1,17 @@
+Quote_1
+Quote_2
+Quote_3
+Quote_4
+Quote_5
+Quote_6
+Quote_7
+Quote_8
+Author_1
+Author_2
+Author_3
+Author_4
+Author_5
+Author_6
+Author_7
+Author_8
+

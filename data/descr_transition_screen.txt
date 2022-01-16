@@ -1,0 +1,44 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	format:
+;	-------------------------------------------------------------------------
+;
+;		quotes
+;
+;			quote		<quote>
+;			[ trans		<translation>	]
+;			[ quoted	<person quoted>	]
+;
+;			...
+;
+;	-------------------------------------------------------------------------
+;
+;	The quote, translation, and quoted are now labels into a localised text file
+;   If you add new quotes, then the labels should be added to data/descr_quotes_lookup.txt", 
+;   and the strings added to data/text/quotes.txt
+;
+;   All the old 'labels' have been kept in the format here as it was easier, but in general
+;	labels should contain only the characters a-z, A-Z and '_', '"' will be ignored and any 
+;   other characters will be changed to an underscore during text lookup
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+quotes
+
+
+	quote    "Quote_1"
+	quoted    "Author_1"
+	quote    "Quote_2"
+	quoted    "Author_2"
+	quote    "Quote_3"
+	quoted    "Author_3"
+	quote    "Quote_4"
+	quoted    "Author_4"
+	quote    "Quote_5"
+	quoted    "Author_5"
+	quote    "Quote_6"
+	quoted    "Author_6"
+	quote    "Quote_7"
+	quoted    "Author_7"
+	quote    "Quote_8"
+	quoted    "Author_8"
+	

@@ -1,0 +1,129 @@
+script
+
+	;freeze fort names
+	freeze_faction_ai aztecs
+
+	;show the whole map
+	restrict_strat_radar false
+
+;	1. 12 Turns per year.
+declare_counter period
+set_counter period 1 ;set to Jan -Feb
+declare_counter winter_severity
+set_counter winter_severity 1
+
+;;;;;6turns per year script;;;;;
+
+monitor_event FactionTurnStart FactionIsLocal ; set the season for each period
+	if I_CompareCounter period == 1 ;Jan, Feb
+		console_command season winter
+		set_event_counter summer_winter 1; next turn will be summer
+	end_if
+	
+	if I_CompareCounter period == 2 ;March April
+		console_command season summer
+	end_if
+	
+	if I_CompareCounter period == 3 ;May June
+		console_command season summer
+	end_if
+	
+	if I_CompareCounter period == 4 ;July Aug
+		console_command season summer
+	end_if
+	
+	if I_CompareCounter period == 4 ;July Aug
+		and I_CompareCounter winter_severity == 2; severe winter
+		set_event_counter summer_winter 2;next turn will be winter
+	end_if
+
+	if I_CompareCounter period == 5 ;Sept Oct
+		and I_CompareCounter winter_severity == 1; normal winter
+		console_command season summer
+		set_event_counter summer_winter 2;next turn will be winter
+	end_if
+	
+	if I_CompareCounter period == 5 ;Sept Oct
+		and I_CompareCounter winter_severity == 2; severe winter
+		console_command season winter
+	end_if
+	
+	if I_CompareCounter period == 5 ;Sept Oct
+		and I_CompareCounter winter_severity == 3; mild winter
+		console_command season summer
+	end_if
+
+	if I_CompareCounter period == 6 ;Nov Dec
+		and I_CompareCounter winter_severity == 1; normal winter
+		console_command season winter
+	end_if
+	
+	if I_CompareCounter period == 6 ;Nov Dec
+		and I_CompareCounter winter_severity == 2; severe winter
+		console_command season winter
+	end_if
+	
+	if I_CompareCounter period == 6 ;Nov Dec
+		and I_CompareCounter winter_severity == 3; mild winter
+		console_command season summer
+		set_event_counter summer_winter 1;next turn will be summer
+	end_if
+	
+	inc_counter period 1 ;advance the period
+	if I_CompareCounter period == 7 ;start a new year
+		set_counter period 1
+	end_if
+end_monitor
+
+monitor_event FactionTurnEnd FactionType slave
+	and I_CompareCounter period > 1
+	console_command season summer
+end_monitor
+
+monitor_event FactionTurnEnd FactionType slave ; randomized winter
+	and I_CompareCounter period == 4
+	set_counter winter_severity 1 ; back to normal winter
+	if RandomPercent > 80 ; 80% normal winter, 20% of either severe or mild
+		set_event_counter next_option 1
+	end_if
+	
+	if RandomPercent > 50
+		and I_EventCounter next_option == 1
+		set_counter winter_severity 3 ;50 percent chance of mild winter once normal has been eliminated
+		set_event_counter next_option 0
+	end_if
+	
+	if I_EventCounter next_option == 1
+		set_counter winter_severity 2 ;50 percent chance of severe winter once normal has been eliminated
+		set_event_counter next_option 0
+	end_if
+end_monitor
+;;;;; fort names ;;;;;
+
+monitor_event PreFactionTurnStart FactionIsLocal
+  	spawn_character	aztecs,	Hilltop Camp, princess, age 16, x 119, y 115
+  	console_command move_character "Hilltop Camp" 119, 116
+   end_monitor
+
+monitor_event FactionTurnEnd FactionIsLocal
+        retire_characters aztecs princess
+    end_monitor
+
+;;;;; test events - Redwall frees Ninians;;;;;
+
+monitor_event GeneralCaptureSettlement SettlementName StNin
+	and FactionType england
+
+add_events
+	event historic redwall_capture_StNin
+	date	0 0
+end_add_events
+
+end_monitor
+
+	wait_monitors
+
+end_script
+
+
+

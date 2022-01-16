@@ -1,0 +1,42 @@
+england
+hold_regions
+take_regions 18
+outlive turks
+short_campaign hold_regions
+take_regions 18
+outlive turks
+
+france
+hold_regions
+take_regions 18
+outlive england
+short_campaign hold_regions
+take_regions 18
+outlive england
+
+scotland
+hold_regions
+take_regions 18
+short_campaign hold_regions
+take_regions 18
+
+turks
+hold_regions
+take_regions 18
+outlive england
+short_campaign hold_regions
+take_regions 18
+outlive england
+
+aztecs
+hold_regions
+take_regions 100
+short_campaign hold_regions
+take_regions 100
+
+slave
+hold_regions
+take_regions 100
+short_campaign hold_regions
+take_regions 100
+
