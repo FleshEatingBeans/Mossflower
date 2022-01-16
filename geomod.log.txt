@@ -1,0 +1,34 @@
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:07
+
+The following labels do not correspond to any name: 
+Boretusk Tower
+the Conqueror
+of Boьsa
+Skнlas
+
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:09
+
+Impossible to find the external name of unit 'Fieldmouse Pikes' !
+
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:09
+
+Impossible to find the description of unit 'Fieldmouse Pikes' !
+
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:10
+
+Impossible to find the description of unit 'Swiftback Bucko Spearhares' !
+
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:11
+
+Impossible to find the external name of unit 'Test Slingers' !
+
+****************************************************************************************************
+Error, Geomod v0.6.18 2022-01-15 23:26:11
+
+Impossible to find the description of unit 'Test Slingers' !
+
