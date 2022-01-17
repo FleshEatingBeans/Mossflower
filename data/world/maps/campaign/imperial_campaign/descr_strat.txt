@@ -111,29 +111,6 @@ settlement
 	}
 }
 
-settlement
-{
-	level village
-	region Forest_Corner_Province
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-	building
-	{
-		type core_building wooden_pallisade
-	}
-	building
-	{
-		type hinterland_roads roads
-	}
-	building
-	{
-		type hinterland_farms farms+2
-	}
-}
-
 settlement castle
 {
 	level village
@@ -147,219 +124,6 @@ settlement castle
 	{
 		type core_castle_building wooden_castle
 	}
-}
-
-settlement
-{
-	level village
-	region North07
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region North08
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement castle
-{
-	level town
-	region North09
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-	building
-	{
-		type core_castle_building wooden_castle
-	}
-}
-
-settlement
-{
-	level village
-	region North10
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest01
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest02
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest03
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest04
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest05
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest06
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest07
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest08
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest09
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest10
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest11
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region NorthWest12
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region BatMountains01
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region BatMountains02
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
-}
-
-settlement
-{
-	level village
-	region BatMountains03
-
-	year_founded 0
-	population 400
-	plan_set default_set
-	faction_creator england
 }
 
 character	Matthias, named character, male, leader, age 17, x 129, y 128, portrait matthias 
@@ -1209,7 +973,241 @@ settlement
 	}
 }
 
+settlement
+{
+	level village
+	region North07
 
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region North08
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement castle
+{
+	level town
+	region North09
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+	building
+	{
+		type core_castle_building wooden_castle
+	}
+}
+
+settlement
+{
+	level village
+	region North10
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest01
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest02
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest03
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest04
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest05
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest06
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest07
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest08
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest09
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest10
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest11
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region NorthWest12
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region BatMountains01
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region BatMountains02
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region BatMountains03
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+}
+
+settlement
+{
+	level village
+	region Forest_Corner_Province
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator england
+	building
+	{
+		type core_building wooden_pallisade
+	}
+	building
+	{
+		type hinterland_roads roads
+	}
+	building
+	{
+		type hinterland_farms farms+2
+	}
+}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; >>>> start of diplomacy section <<<<
